@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Envisionally Overcomers</title>
+    <link rel="stylesheet" a href="my.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.2.7/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body id="id" class="bg-gray-100 font-roboto">
+
+    <!-- Header -->
+    <div id="header" class="bg-black p-4 shadow-lg">
+        <ul id="image-menu" class="flex items-center justify-between">
+            <li><img src="image/eof.jpg.jpg" alt="Logo" class="w-24 sm:w-30 md:w-40 lg:w-40 h-auto rounded-lg"></li>
+            <li class="menu-icon text-white cursor-pointer text-3xl">
+                <i id="icon" class="fa-solid fa-bars"></i>
+            </li>
+        </ul>
+        <div class="menu">
+            <ol id="menu" class="hidden space-y-4 text-center text-white">
+                <li><a href="#header" class="hover:text-yellow-300 transition duration-300">Home</a></li>
+                <li><a href="about.html" class="hover:text-yellow-300 transition duration-300">About Us</a></li>
+                <li><a href="#contact" class="hover:text-yellow-300 transition duration-300">Contacts</a></li>
+            </ol>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="relative w-full h-screen bg-cover bg-center" style="background-image: url('image/9659b6909a3416d27c50c875e00a403a.jpg');">
+        <!-- Overlay for Text and Buttons -->
+        <div class="absolute inset-0 flex flex-col justify-center items-center text-center text-white bg-black bg-opacity-50 p-6">
+            <!-- Title Text -->
+            <div class="text-4xl font-bold mb-6">
+                The Envisionally Overcomers Foundation
+            </div>
+            <div class="typing-effect text-2xl mb-6 text-green-3S00">
+                Dream big, Aim high, and Achieve Greatness Together!
+            </div>
+            <!-- Buttons Section -->
+            <div class="space-y-10">
+                <a href="register.html" class="inline-block px-6 py-3 bg-blue-600 text-white rounded-lg shadow-md hover:bg-blue-700 transition duration-300">
+                    Register here
+                </a>
+                <a href="donate.html" class="inline-block px-6 py-3 bg-green-400 text-white rounded-lg shadow-md hover:bg-yellow-500 transition duration-300">
+                    Donate Now
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section class="container mx-auto py-16" id="about">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div class="text-center md:text-left">
+                <h3 class="text-3xl font-bold text-green-400 mb-4">Who We Are?</h3>
+                <p class="text-lg text-gray-700 mb-7">We are a non-governmental organization (NGO) focused on improving the lives of vulnerable populations. 
+                    Our work includes providing essential resources, education, and healthcare to those in need.
+                </p>
+                <a href="https://wa.link/eai3k1" class="bg-blue-600 text-white px-6 py-3 text-lg hover:bg-blue-500">Get Involved</a>
+            </div>
+            <div>
+                <img src="image/download.jfif" alt="Charity Image" 
+    class="w-full rounded-lg shadow-lg transition-transform duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl">
+
+            </div>
+        </div>
+    </section>
+
+    <!-- More Information Section -->
+    <div class="container p-6 mx-auto">
+        <div class="para1 mb-8">
+            <!-- About Us Section -->
+            <h3 class="text-3xl font-bold text-green-400 mb-4 sm:text-left">About Us</h3>
+            <p class="text-lg text-gray-700 mb-7">
+                The Envisionally Overcomers Foundation (EOF) is a non-governmental organization dedicated to making a positive impact on communities across the nation. Through a variety of outreach programs, social initiatives, and the creation of business opportunities, we aim to empower individuals and foster sustainable growth.
+                Our mission is to support different groups of people and provide members of our organization with the resources and platforms needed to succeed, both individually and collectively.
+            </p>
+            
+            <!-- Our Objectives Section -->
+            <h3 class="text-3xl font-bold text-green-400 mb-4 sm:text-left">Our Objectives</h3>
+            <p class="text-lg text-gray-700 mt-4">
+                We are committed to improving the education system in our country. Our goal is to create an environment where everyone has the opportunity to access quality education and reach their full potential.
+                Your donation can help us reach more people in need and make a lasting impact in their lives.
+            </p>
+            
+            <!-- Donation Button -->
+            <div class="btn sm:text-left">
+                <a href="donate.html" class="inline-block px-6 py-3 bg-green-400 text-white rounded-lg shadow-md hover:bg-yellow-500 transition duration-300">
+                    Donate Now
+                </a>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- Image Section with Hover Text -->
+    <div class="flex justify-center gap-8 my-8 flex-wrap">
+        <!-- Image 1 with hover text and image opacity change -->
+        <div class="group relative w-full sm:w-1/2 md:w-1/3 lg:w-1/4">
+            <img src="image/9659b6909a3416d27c50c875e00a403a.jpg" alt="" class="transition-transform rounded-lg transform hover:scale-105 group-hover:opacity-80 w-full h-auto">
+            <div class="absolute inset-0 flex justify-center items-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <p class="text-white text-xl">Education</p>
+            </div>
+        </div>
+    
+        <!-- Image 2 with hover text and image opacity change -->
+        <div class="group relative w-full sm:w-1/2 md:w-1/3 lg:w-1/4">
+            <img src="image/Doctors Without Borders.jfif" alt="" class="transition-transform rounded-lg transform hover:scale-105 group-hover:opacity-80 w-full h-auto">
+            <div class="absolute inset-0 flex justify-center items-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <p class="text-white text-xl">Health</p>
+            </div>
+        </div>
+    
+        <!-- Image 3 with hover text and image opacity change -->
+        <div class="group relative w-full sm:w-1/2 md:w-1/3 lg:w-1/4">
+            <img src="image/we need you!.jfif" alt="" class="transition-transform rounded-lg transform hover:scale-105 group-hover:opacity-80 w-full h-auto">
+            <div class="absolute inset-0 flex justify-center items-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <p class="text-white text-xl">Community Support</p>
+            </div>
+        </div>
+    </div>
+    
+    
+
+    <!-- Contact Section -->
+    <section class="container mx-auto py-16" id="contact">
+        <div class="text-center">
+            <h3 class="text-3xl font-bold text-blue-600 mb-6">Get in Touch</h3>
+            <p class="text-lg text-gray-700 mb-6">We would love to hear from you! Whether you're interested in volunteering, collaborating, or learning more, reach out to us.</p>
+            <a href="mailto:fdm353607@gmail.com" class="bg-green-600 text-white px-8 py-4 rounded-full text-xl hover:bg-green-500">Email Us</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-8">
+       
+            <div class="container mx-auto text-center">
+                <p class="text-sm">&copy; 2025 The Envisionally Overcomers Foundation. All Rights Reserved.</p>
+                <div class="flex justify-center space-x-6 mt-4">
+                    <a href="#" class="hover:text-gray-300"><i class="fa-brands fa-instagram" style="color: #ffffff;font-size: 35px;"></i></a>
+                    <a href="#" class="hover:text-gray-300"><i class="fa-brands fa-tiktok" style="color: #ffffff; font-size: 35px;"></i></a>
+                    <a href="https://web.facebook.com/profile.php?id=61564369275852" class="hover:text-gray-300"><i class="fa-brands fa-facebook" style="color: #fcfcfc; font-size: 35px;"></i></a>
+                </div>
+            </div>
+    </footer>
+
+</body>    
+        

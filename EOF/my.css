@@ -1,0 +1,28 @@
+ /* Keyframes for typing effect */
+ @keyframes typing {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+/* Styling for the typing effect */
+.typing-effect {
+    display: inline-block;
+    font-size: 1.5rem; /* equivalent to text-2xl in Tailwind */
+    color: #fcf9f9;
+    border-right: 3px solid black; /* Cursor effect */
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+    animation: typing 4s steps(40) 1s forwards, blink 0.75s step-end infinite;
+}
+
+/* Keyframes for cursor blinking effect */
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
